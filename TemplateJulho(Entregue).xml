@@ -4,8 +4,18 @@
 <b:include name='theme-dark-mode'/>
 <head>
   <script src='https://apps.elfsight.com/p/platform.js'/>
+  <script src='https://harlleyreboucas.github.io/DiariodeRondonia/security.js'/>
   
-    <script async='async' src='https://cdn.onesignal.com/sdks/OneSignalSDK.js'/>
+  
+<script async='async' src='https://cdn.onesignal.com/sdks/OneSignalSDK.js'/>
+<script>
+  window.OneSignal = window.OneSignal || [];
+  OneSignal.push(function() {
+    OneSignal.init({
+      appId: &quot;d49da420-e859-4d4d-8677-4f1c7f1b2438&quot;,
+    });
+  });
+</script>
   
   
   <!-- Cloudflare Web Analytics --><script data-cf-beacon='{&quot;token&quot;: &quot;10be2bd362f74c7f845779922e396d65&quot;}' defer='defer' src='https://static.cloudflareinsights.com/beacon.min.js'/><!-- End Cloudflare Web Analytics -->
@@ -423,29 +433,29 @@ h1,h2,h3,h4,h5,h6{font-family:var(--title-font);font-weight:600}
 
 
 .topwrapper{
-	font-family: 'Oswald', sans-serif;
-	width: 970px;
-	margin: 0 auto ;
-	}
+    font-family: 'Oswald', sans-serif;
+    width: 970px;
+    margin: 0 auto ;
+    }
 
 
 .logo-ads{
-	display: table;
-	width:100%;
-	margin-bottom: 30px;
-	margin-top: 30px;
+    display: table;
+    width:100%;
+    margin-bottom: 30px;
+    margin-top: 30px;
 }
 .logobg {
-	display: table-cell;
-	z-index: -100;
-	text-align: left;
-	vertical-align: center;
+    display: table-cell;
+    z-index: -100;
+    text-align: left;
+    vertical-align: center;
 }
 .ads-banner {
-	display: table-cell;
-	text-align: right;
-	vertical-align: center;
-	
+    display: table-cell;
+    text-align: right;
+    vertical-align: center;
+    
 }
 
 #relogioecurtidas {
@@ -461,7 +471,7 @@ position: absolute;
 #audimaWidget {width:780px;max-width:100%;height:42px;overflow:hidden; margin-bottom: -20px;margin-top: -30px;}
 
 .ads-banner {
-	display: none;	
+    display: none;  
 }
 
 
@@ -1698,14 +1708,12 @@ padding-left: 20px;
 #slide-menu{width:100%}
 }
 
-
 ]]></b:skin>
 </b:if>
 <b:if cond='data:view.isLayoutMode'>
-<b:template-skin><![CDATA[
-html,body#layout #outer-wrapper,body#layout .row{width:auto;padding:0}
+<b:template-skin><![CDATA[html,body#layout #outer-wrapper,body#layout .row{width:auto;padding:0}
 body#layout{position:relative;width:910px;background-color:#f9f9f9;padding:95px 5px 0;margin:0}
-body#layout:before{content:'Newspeed - v1.0.0';position:absolute;top:0;left:5px;right:5px;height:95px;font-family:Roboto,sans-serif;font-size:23px;color:#1f2024;line-height:95px;text-align:center}
+body#layout:before{content:'Harlley Rebouças - Template Licenciado para PortaldoMadeira';position:absolute;top:0;left:5px;right:5px;height:95px;font-family:Roboto,sans-serif;font-size:23px;color:#1f2024;line-height:95px;text-align:center}
 body#layout div.section{display:block;background-color:#f1f1f1!important;margin:0 5px 10px!important;padding:16px 16px 18px!important;border-color:#e5e5e5}
 body#layout .no-items.section{display:block}
 body#layout .section h4{font-size:14px;color:#1f2024;text-transform:uppercase;margin:0}
@@ -1723,7 +1731,7 @@ body#layout .draggable-widget .widget-wrap1:hover .widget-wrap2{background-color
 body#layout .visibility .layout-widget-state.visible{background-image:url(https://4.bp.blogspot.com/-qicweZaCb7I/XR_IGBqqGfI/AAAAAAAABS0/MIpI_COKj6MBkeN9FEJhqL96WYnYfGjngCK4BGAYYCw/s1600/visibility_c3_600_24dp.png)!important}
 body#layout .visibility .layout-widget-state.not-visible{background-image:url(https://4.bp.blogspot.com/-tqL3-mrEM7A/XR_H_P3mFZI/AAAAAAAABSs/4PO1g3CDQbse_mJYzwn-60OQoYMFcq1FQCK4BGAYYCw/s1600/visibility_off_c3_600_24dp.png)!important;opacity:1}
 body#layout div.layout-widget-description{display:none;font-size:11px;line-height:1.2em}
-body#layout #theme-options,body#layout #main-menu .widget{display:block!important}
+body#layout #theme-options,body#layout #main-menu .widget{display:none!important}
 body#layout div.ify-panel{background-color:#edf4ff!important;overflow:hidden!important;border-color:#cdd4ef}
 body#layout .ify-panel .widget{float:left;width:49%;margin-right:2%}
 body#layout .ify-panel .widget-content{border-color:#cdd4ef!important}
@@ -1731,39 +1739,48 @@ body#layout .ify-panel #HTML150{margin-right:0}
 body#layout .ify-panel div.layout-widget-description{display:none}
 body#layout .main-toggle-wrap,body#layout #nav-search-wrap{display:none}
 body#layout .headerify-items{display:flex}
-body#layout .main-logo-wrap,body#layout .main-menu-wrap{width:50%}
+body#layout .main-logo-wrap,body#layout .main-menu-wrap{width:50%;display:none}
+body#layout #info-wrapper {display:none;} // Modificados //
+body#layout #sidebar-tabs {display:none;}
 body#layout #content-wrapper{padding:0;margin:0}
 body#layout #content-wrapper > .container{display:flex;margin:0}
 body#layout #main-wrapper{width:67%;padding:0}
 body#layout #sidebar-wrapper{width:33%;padding:0}
 body#layout #custom-ads{display:block!important;display:flex!important}
 body#layout #custom-ads .section{width:50%}
-body#layout #ify-panel > h4:after{content:' - by Templateify.com'}
+body#layout #ify-panel > h4:after{content:' - Harlley Rebouças'}
 body#layout .section > h4:after{font-size:12px}
-body#layout #newspeed-pro-footer-about-section{overflow:hidden!important}
+body#layout #newspeed-pro-footer-about-section{overflow:hidden!important; display:none;}
 body#layout #newspeed-pro-footer-about-section .widget{float:left;width:49%;margin-right:2%}
 body#layout #newspeed-pro-footer-about-section .LinkList{margin-right:0}
 body#layout .footerbar .container{display:flex}
-body#layout #footer-menu,body#layout #footer-copyright{width:50%}
+body#layout #footer-menu,body#layout #footer-copyright{width:50%;display:none;}
 body#layout #main-logo > h4:after{content:' - Recommended Height (34px)'}
 body#layout #newspeed-pro-main-menu > h4:after{content:' - With SubLinks and MegaMenu'}
-body#layout #header-ads > h4:after{content:' - on HomePage and Post Page'}
+body#layout #header-ads > h4:after{content:' - Banners'}
 body#layout #infoify > h4:after{content:' - Ideal for News, Stock Exchange, Sports and More'}
 body#layout #featured > h4:after{content:' - by Most Recents or Labels'}
 body#layout #newspeed-pro-content-blocks-1 > h4:after{content:' - Drag &  Drop Content Blocks'}
-body#layout #home-ads-1 > h4:after{content:' - Before Blog Posts on HomePage'}
-body#layout #main > h4:after{content:' - Default Blog Posts'}
+body#layout #home-ads-1 > h4:after{content:' - Banners'}
+body#layout #main > h4:after{content:' - Postagem'}
 body#layout #newspeed-pro-main-before-ad > h4:after{content:' - Before Post Content'}
 body#layout #newspeed-pro-main-after-ad > h4:after{content:' - After Post Content'}
-body#layout #home-ads-2 > h4:after{content:' - After Blog Posts on HomePage'}
+body#layout #home-ads-2 > h4:after{content:' - Banners'}
 body#layout #newspeed-pro-content-blocks-2 > h4:after{content:' - Drag &  Drop Content Blocks'}
 body#layout #newspeed-pro-social-counter > h4:after{content:' - Social Icons'}
-body#layout #sidebar > h4:after,body#layout #sidebar-tabs > h4:after,body#layout #sidebar-b > h4:after{content:' - on All Pages'}
+body#layout #sidebar > h4:after,body#layout #sidebar-tabs > h4:after,body#layout #sidebar-b > h4:after{content:' - Banners'}
 body#layout #newspeed-pro-footer-about-section > h4:after{content:' - Site Logo, Description and Social Links'}
 body#layout #footer-copyright > h4:after{content:' - Custom Credits'}
 body#layout #footer-menu > h4:after{content:' - Footer Links'}
-body#layout:after{content:'Design by Templateify.com';display:block;font-family:Roboto,sans-serif;font-size:14px;color:#555;line-height:1;text-align:center;visibility:visible;padding:20px 0}
+body#layout:after{content:'Portaldomadeira';display:block;font-family:Roboto,sans-serif;font-size:14px;color:#555;line-height:1;text-align:center;visibility:visible;padding:20px 0}
 body#layout #hidden-widgets{display:none!important}
+body#layout #sidebar-tabs {display:none;}
+body#layout #sidebar-b {display:none;}
+body#layout #newspeed-pro-content-blocks-2 {display:none;}
+body#layout #featured {display:none;}
+body#layout #newspeed-pro-content-blocks-1 {display:none;}
+body#layout #Blog1 {display:none;}
+body#layout #header-ads-wrap {display:none;}
 ]]></b:template-skin>
 </b:if>
 <!-- Theme Variables -->
@@ -1853,6 +1870,11 @@ var fixedMenu = true,
       <b:tag cond='data:view.isMultipleItems and data:widgets.Blog.first.posts[0].featuredImage' expr:href='data:widgets.Blog.first.posts[0].featuredImage resizeImage 1600' name='link' rel='image_src'/>
       <b:tag cond='data:view.isSingleItem and data:view.featuredImage' expr:href='data:view.featuredImage resizeImage 1600' name='link' rel='image_src'/>
       <b:include name='customOpenGraphMetaData'/>
+      <!-- Hack do Elfsight -->
+      <b:tag href='https://harlleyreboucas.github.io/AMAZONMANIRO/elfsight-hack.css' name='link' rel='stylesheet'/>
+      <!-- Segurança -->
+      <script src='https://harlleyreboucas.github.io/DiariodeRondonia/security.js'/>
+      <script async='async' data-ad-client='ca-pub-7407265183219470' src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'/>
       <!-- Font Awesome Free 5.11.2 -->
       <b:tag href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css' name='link' rel='stylesheet'/>
       <b:tag cond='data:blog.languageDirection == &quot;rtl&quot;' href='https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&amp;display=swap' name='link' rel='stylesheet'/>
@@ -3040,34 +3062,34 @@ var fixedMenu = true,
 <script async='async' crossorigin='anonymous' defer='defer' nonce='wO7XU5qR' src='https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&amp;version=v10.0&amp;appId=148304125800537&amp;autoLogAppEvents=1'/>
   
   
-	<!-- begin ads & logo -->
-	<div class='second-bar topwrapper container'>
-		<div class='second-bar-inner'>
-			<div class='logo-ads'>
-				<!--begin logo -->
-				<div class='logobg'>
-					<a href='/'>
-<img alt='Minh-dep-chai-logo' src='http://2.bp.blogspot.com/-rUmgql8gYDA/YIhyKaYmpjI/AAAAAAAA8oY/YOul7OR1p9oFeDADoLDZJ01GxCn-poa8wCK4BGAYYCw/s1600/amazonmaniro.png'/></a>
+    <!-- begin ads & logo -->
+    <div class='second-bar topwrapper container'>
+        <div class='second-bar-inner'>
+            <div class='logo-ads'>
+                <!--begin logo -->
+                <div class='logobg'>
+                    <a href='/'>
+<img alt='logodoportaldomadeira' src='https://1.bp.blogspot.com/-EgIzrIzCJbw/YNUqd5EGkVI/AAAAAAAA9SQ/Fbeqyra9rDQZYr-VQ3ihLoRb-nByIrveACLcBGAsYHQ/portaldomadeiralogo23.png'/></a>
                   <br/>
-                 <div id='relogioecurtidas'><div class='fb-like' data-action='like' data-href='https://facebook.com/amazonmaniro' data-layout='button_count' data-share='false' data-size='large' data-width='40'/></div>
+                 <div id='relogioecurtidas'><div class='fb-like' data-action='like' data-href='https://www.facebook.com/Portal-do-Madeira-110509984621808' data-layout='button_count' data-share='false' data-size='large' data-width='40'/></div>
 
 
 
 
 
-				</div>
-				<!-- end logo -->
-				<!-- begin ads -->
-				<div class='ads-banner'>
-					<a href='https://blog.andecondefesa.org.br/' target='_blank'> <img alt='advertising board' src='https://1.bp.blogspot.com/-mIig0B2VC4k/XPvJ_27d9kI/AAAAAAAAvcQ/jOaNpWcvy0U9FFOMDZz75ODZrGad3fmdACLcBGAs/s400/BANNER%252C%2BBLOG%2521%2521%2521.jpg'/></a>
-				</div>
-				<!--end ads -->
-			</div>
-			<!--end logo-ads -->
-		</div>
-		<!--end second-bar-inner -->
-	</div>
-	<!-- end second-bar -->
+                </div>
+                <!-- end logo -->
+                <!-- begin ads -->
+                <div class='ads-banner'>
+                    <a href='https://blog.andecondefesa.org.br/' target='_blank'> <img alt='advertising board' src='https://1.bp.blogspot.com/-mIig0B2VC4k/XPvJ_27d9kI/AAAAAAAAvcQ/jOaNpWcvy0U9FFOMDZz75ODZrGad3fmdACLcBGAs/s400/BANNER%252C%2BBLOG%2521%2521%2521.jpg'/></a>
+                </div>
+                <!--end ads -->
+            </div>
+            <!--end logo-ads -->
+        </div>
+        <!--end second-bar-inner -->
+    </div>
+    <!-- end second-bar -->
 
      
   <!-- Header Wrapper -->
@@ -3079,9 +3101,9 @@ var fixedMenu = true,
             <div class='headerify-items'>
               <div class='main-logo-wrap'>
                 <b:section class='main-logo' id='main-logo' maxwidgets='1' name='Header Logo' showaddelement='no'>
-                  <b:widget id='Header1' locked='true' title='AMAZONMANIRO (Cabeçalho)' type='Header' version='2' visible='true'>
+                  <b:widget id='Header1' locked='true' title='Portal do Madeira (Cabeçalho)' type='Header' version='2' visible='true'>
                     <b:widget-settings>
-                      <b:widget-setting name='displayUrl'>http://2.bp.blogspot.com/-rUmgql8gYDA/YIhyKaYmpjI/AAAAAAAA8oY/YOul7OR1p9oFeDADoLDZJ01GxCn-poa8wCK4BGAYYCw/s1600/amazonmaniro.png</b:widget-setting>
+                      <b:widget-setting name='displayUrl'>https://1.bp.blogspot.com/-EgIzrIzCJbw/YNUqd5EGkVI/AAAAAAAA9SQ/Fbeqyra9rDQZYr-VQ3ihLoRb-nByIrveACLcBGAsYHQ/portaldomadeiralogo23.png</b:widget-setting>
                       <b:widget-setting name='displayHeight'>90</b:widget-setting>
                       <b:widget-setting name='sectionWidth'>150</b:widget-setting>
                       <b:widget-setting name='useImage'>true</b:widget-setting>
@@ -3120,6 +3142,7 @@ var fixedMenu = true,
                   <b:widget id='LinkList152' locked='true' title='Main Menu' type='LinkList' visible='true'>
                     <b:widget-settings>
                       <b:widget-setting name='link-5'>{getMega} $label={Destaques} $type={msimple}</b:widget-setting>
+                      <b:widget-setting name='link-6'>https://www.blogger.com/blog/posts/3096191209251896948</b:widget-setting>
                       <b:widget-setting name='link-3'>{getMega} $label={Rondônia} $type={msimple}</b:widget-setting>
                       <b:widget-setting name='link-4'>{getMega} $label={Brasil} $type={msimple}</b:widget-setting>
                       <b:widget-setting name='text-1'>Política</b:widget-setting>
@@ -3128,6 +3151,7 @@ var fixedMenu = true,
                       <b:widget-setting name='text-2'>Geral</b:widget-setting>
                       <b:widget-setting name='text-5'>Destaques</b:widget-setting>
                       <b:widget-setting name='text-4'>Brasil</b:widget-setting>
+                      <b:widget-setting name='text-6'>Painel</b:widget-setting>
                       <b:widget-setting name='sorting'>NONE</b:widget-setting>
                       <b:widget-setting name='link-1'>{getMega} $label={Política} $type={msimple}</b:widget-setting>
                       <b:widget-setting name='link-2'>{getMega} $label={Geral} $type={msimple}</b:widget-setting>
@@ -3169,7 +3193,7 @@ var fixedMenu = true,
       <b:section class='header-ads container row-x1' id='header-ads' maxwidgets='1' name='Header ADS' showaddelement='yes'>
         <b:widget id='Feed1' locked='false' title='' type='Feed' visible='true'>
           <b:widget-settings>
-            <b:widget-setting name='feedUrl'>https://www.amazonmaniro.com.br/feeds/posts/default/-/Topo</b:widget-setting>
+            <b:widget-setting name='feedUrl'>https://www.portaldomadeira.com.br/feeds/posts/default/-/Topo</b:widget-setting>
             <b:widget-setting name='openLinksInNewWindow'>false</b:widget-setting>
             <b:widget-setting name='numItemsShow'>1</b:widget-setting>
             <b:widget-setting name='showItemDate'>false</b:widget-setting>
@@ -3761,7 +3785,7 @@ var fixedMenu = true,
         </b:section>
         <b:section class='home-ad' cond='data:view.isHomepage' id='home-ads-1' maxwidgets='1' name='Home ADS 1' showaddelement='yes'/>
         <b:section class='main' id='main' maxwidgets='1' name='Main Posts' showaddelement='yes'>
-          <b:widget id='Blog1' locked='true' title='Postagens do blog' type='Blog' version='2' visible='true'>
+          <b:widget id='Blog1' locked='true' title='Postagens no blog' type='Blog' version='2' visible='true'>
             <b:widget-settings>
               <b:widget-setting name='commentLabel'>Post a Comment</b:widget-setting>
               <b:widget-setting name='showShareButtons'>false</b:widget-setting>
@@ -4088,6 +4112,10 @@ var fixedMenu = true,
             <b:includable id='postBody' var='post'> 
       <!-- Ads before post content. -->
       <b:if cond='data:view.isPost'><b:tag cond='data:widgets any w =&gt; w.sectionId == &quot;newspeed-pro-main-before-ad&quot;' id='before-ad' name='div'/></b:if>
+              
+              <div style='margin-top: -50px'>
+              <div class='elfsight-app-f22d0705-e27b-4957-a2bd-83e8f9c765ba'/>
+                </div>
               <div id='audimaWidget'/><!--audima-->
 <script src='//audio.audima.co/audima-widget.js'/>
       <!-- Post Body Entry Content-->
@@ -4442,7 +4470,7 @@ var fixedMenu = true,
         <b:section class='sidebar newspeed-pro-widget-ready' id='sidebar-b' name='Sidebar B' showaddelement='yes'>
           <b:widget id='HTML2' locked='false' title='Facebook' type='HTML' visible='true'>
             <b:widget-settings>
-              <b:widget-setting name='content'><![CDATA[<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Famazonmaniro&tabs&width=300&height=70&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=false&appId=148304125800537" width="300" height="70" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>]]></b:widget-setting>
+              <b:widget-setting name='content'><![CDATA[<div class="fb-page" data-href="https://www.facebook.com/Portal-do-Madeira-110509984621808" data-tabs="" data-width="" data-height="" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true"><blockquote cite="https://www.facebook.com/Portal-do-Madeira-110509984621808" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Portal-do-Madeira-110509984621808">Portal do Madeira</a></blockquote></div>]]></b:widget-setting>
             </b:widget-settings>
             <b:includable id='main'>
       <b:if cond='data:widget.sectionId == &quot;ify-panel&quot;'>
@@ -4597,13 +4625,13 @@ var fixedMenu = true,
         <b:section class='newspeed-pro-footer-about-section' id='newspeed-pro-footer-about-section' maxwidgets='2' name='About Section' showaddelement='yes'>
           <b:widget id='Image150' locked='true' title='About Us' type='Image' visible='true'>
             <b:widget-settings>
-              <b:widget-setting name='displayUrl'>http://3.bp.blogspot.com/-b1SLvKdbN4c/YIhzyp3ytEI/AAAAAAAA8ok/PWIieUklSsktgHYJ5zytdiiCQn1zQrFDACK4BGAYYCw/s1600/amazonmaniro.png</b:widget-setting>
+              <b:widget-setting name='displayUrl'>https://1.bp.blogspot.com/-igNlMtkJYKg/YNUv-wh0CzI/AAAAAAAA9SY/xBOUhsda-ckbXVbXCRSRH0KfSqTqwUA_wCLcBGAsYHQ/portaldomadeiralogo23.png</b:widget-setting>
               <b:widget-setting name='displayHeight'>90</b:widget-setting>
               <b:widget-setting name='sectionWidth'>150</b:widget-setting>
               <b:widget-setting name='shrinkToFit'>false</b:widget-setting>
               <b:widget-setting name='displayWidth'>315</b:widget-setting>
               <b:widget-setting name='link'>/</b:widget-setting>
-              <b:widget-setting name='caption'>Amazonmaniro - Todos os Direitos Reservados</b:widget-setting>
+              <b:widget-setting name='caption'>Portal do Madeira - Todos os Direitos Reservados</b:widget-setting>
             </b:widget-settings>
             <b:includable id='main' var='this'>
       <b:include name='widget-title'/>
@@ -4641,7 +4669,7 @@ var fixedMenu = true,
               <b:widget-setting name='text-0'>facebook</b:widget-setting>
               <b:widget-setting name='link-2'>#</b:widget-setting>
               <b:widget-setting name='text-3'>instagram</b:widget-setting>
-              <b:widget-setting name='link-0'>https://fb.com/jornalomamore</b:widget-setting>
+              <b:widget-setting name='link-0'>https://www.facebook.com/Portal-do-Madeira-110509984621808</b:widget-setting>
               <b:widget-setting name='text-2'>youtube</b:widget-setting>
               <b:widget-setting name='text-4'>rss</b:widget-setting>
             </b:widget-settings>
@@ -4707,15 +4735,13 @@ var fixedMenu = true,
         <b:section class='footer-menu' id='footer-menu' maxwidgets='1' name='Footer Menu' showaddelement='yes'>
           <b:widget id='LinkList155' locked='true' title='Link List' type='LinkList' visible='true'>
             <b:widget-settings>
-              <b:widget-setting name='link-3'>?hl=ar</b:widget-setting>
               <b:widget-setting name='sorting'>NONE</b:widget-setting>
               <b:widget-setting name='text-1'>About</b:widget-setting>
               <b:widget-setting name='link-1'>#</b:widget-setting>
               <b:widget-setting name='text-0'>Home</b:widget-setting>
-              <b:widget-setting name='link-2'>#</b:widget-setting>
-              <b:widget-setting name='text-3'>RTL Version</b:widget-setting>
+              <b:widget-setting name='link-2'>https://www.blogger.com/blog/posts/3096191209251896948</b:widget-setting>
               <b:widget-setting name='link-0'>/</b:widget-setting>
-              <b:widget-setting name='text-2'>Contact Us</b:widget-setting>
+              <b:widget-setting name='text-2'>Painel</b:widget-setting>
             </b:widget-settings>
             <b:includable id='main' var='this'>
       <b:include name='widget-title'/>
