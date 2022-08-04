@@ -1,46 +1,73 @@
 #eapps-social-share-buttons-1 .eapps-social-share-buttons-inner .eapps-social-share-buttons-item {
-opacity: 1;     
-margin: 0px;     
-z-index: 9999999999998 !important;
-}
-
-.eaw-weather-info {
-    border-radius: 10px;
-    overflow: hidden;
-    position: relative;
-    z-index: 999999999;
-background-color: #fff;
-}
-
-.eapps-instagram-feed-content {
-    position: relative;
-    width: 100%;
-    z-index: 999999999;
+    opacity: 1;     
+    margin: 0px;     
+    z-index: 9999999999998 !important;
+    }
+    
+    .eaw-weather-info {
+        border-radius: 10px;
+        overflow: hidden;
+        position: relative;
+        z-index: 999999999;
     background-color: #fff;
-}
-
-.eapps-widget.eapps-instagram-feed-popup-visible {
-    position: relative;
-    z-index: 9999999999999;
-}
-
-
-.klGFoa {
-    display: flex;
-    flex-direction: column;
-    margin-right: 20px;
-    flex-shrink: 0;
-    max-width: 100%;
-    z-index: 999999999;
-    background-color: #fff;
-}
-
-.eapp-radio-player-root-layout-component, .eapp-radio-player-root-layout-component * {
-    box-sizing: border-box !important;
-    outline: none !important;
-    z-index: 999999999;
-    background-color: #fff;
-    z-index: 999999999;
-    background-color: #fff;
-}
-
+    }
+    
+    .eapps-instagram-feed-content {
+        position: relative;
+        width: 100%;
+        z-index: 999999999;
+        background-color: #fff;
+    }
+    
+    .eapps-widget.eapps-instagram-feed-popup-visible {
+        position: relative;
+        z-index: 9999999999999;
+    }
+    
+    
+    .klGFoa {
+        display: flex;
+        flex-direction: column;
+        margin-right: 20px;
+        flex-shrink: 0;
+        max-width: 100%;
+        z-index: 999999999;
+        background-color: #fff;
+    }
+    
+    .eapp-radio-player-root-layout-component, .eapp-radio-player-root-layout-component * {
+        box-sizing: border-box !important;
+        outline: none !important;
+        z-index: 999999999;
+        background-color: #fff;
+        z-index: 999999999;
+        background-color: #fff;
+    }
+    
+    
+    .yottie-widget-contents {
+        z-index: 9999999999999999999999999999999999999999999999999999999;
+    }
+    
+    .eapps-root, .eapps-root *, .yottie-widget, .yottie-widget * {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        background: #fff;
+        z-index: 999999999999999999999999999999999999999999999999999;
+    }
+    
+    .yottie-widget-header.yottie-visible {
+        display: block!important;
+        z-index: 99999999999999999999;
+    }
+    
+    .yottie.yottie-popup {
+        position: fixed;
+        visibility: hidden;
+        z-index: 999999999999999999999999999999999999999;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+    
