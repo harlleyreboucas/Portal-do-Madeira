@@ -12,6 +12,14 @@
     background-color: #fff;
     }
 
+    .eapp-weather-weather-component {
+        width: 100%;
+        display: inline-block;
+        position: relative;
+        max-height: 620px;
+        overflow: hidden;
+    }
+
     .eyarYd, .eyarYd * {
         box-sizing: border-box !important;
         outline: none !important;
