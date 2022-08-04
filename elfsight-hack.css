@@ -25,6 +25,12 @@
         outline: none !important;
         z-index: 999999;
     }
+
+    .bPATrn, .bPATrn * {
+        box-sizing: border-box !important;
+        outline: none !important;
+        z-index: 99999999999;
+    }
     
     .eapps-instagram-feed-content {
         position: relative;
