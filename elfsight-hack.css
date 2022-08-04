@@ -11,6 +11,12 @@
         z-index: 999999999;
     background-color: #fff;
     }
+
+    .eyarYd, .eyarYd * {
+        box-sizing: border-box !important;
+        outline: none !important;
+        z-index: 999999;
+    }
     
     .eapps-instagram-feed-content {
         position: relative;
@@ -64,7 +70,7 @@
     .yottie.yottie-popup {
         position: fixed;
         visibility: hidden;
-        z-index: 999999999999999999999999999999999999999;
+        z-index: 9999999999999999999999999999999999999999999999999999999999999999999;
         top: 0;
         right: 0;
         bottom: 0;
