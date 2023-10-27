@@ -186,6 +186,6 @@ $baby-blue: #f8faff;
 
 @keyframes green {
   100% {
-    transform: translateY(-45px);
+    transform: translateY(-35px);
   }
 }
